@@ -1,0 +1,95 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "$id": "https://dodona.ugent.be/schemas/config.json",
+  "title": "Exercise configuration",
+  "description": "The configurations file for an exercise.",
+  "type": "object",
+  "properties": {
+    "type": {
+      "type": "string",
+      "default": "exercise",
+      "enum": [
+        "exercise",
+        "content"
+      ],
+      "description": "Denotes the type of the content."
+    },
+    "programming_language": {
+      "type": "string",
+      "description": "The programming language of the exercise."
+    },
+    "access": {
+      "type": "string",
+      "enum": [
+        "public",
+        "private"
+      ],
+      "description": "Public exercises are usable by everyone, private only those with permission."
+    },
+    "description": {
+      "type": "object",
+      "description": "Some metadata about the exercise.",
+      "properties": {
+        "nl": {
+          "type": "string",
+          "description": "Title of the exercise in Dutch. This is required."
+        },
+        "en": {
+          "type": "string",
+          "description": "Title of the exercise in English. This is optional."
+        }
+      }
+    },
+    "evaluation": {
+      "type": "object",
+      "description": "Configure the evaluation of the exercise.",
+      "properties": {
+        "handler": {
+          "type": "string",
+          "description": "The judge for this exercise. By default, the repository judge is used."
+        },
+        "image": {
+          "type": "string",
+          "description": "The Docker image to use. By default, the Docker image of the judge is used."
+        },
+        "time_limit": {
+          "type": "integer",
+          "description": "Time in seconds a submission may take. After this limit, the evaluation is stopped.",
+          "default": 42
+        },
+        "memory_limit": {
+          "type": "integer",
+          "description": "Memory in bytes a submission may use. The submission cannot use more: either it will crash or it will be killed.",
+          "default": 100000000
+        },
+        "network_enabled": {
+          "type": "boolean",
+          "description": "If the submission may access the network.",
+          "default": false
+        }
+      }
+    },
+    "labels": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": [],
+      "uniqueItems": true,
+      "description": "Labels to categorize this exercise in Dodona.",
+      "examples": [
+        [
+          "example",
+          "voorbeeld"
+        ]
+      ]
+    },
+    "contact": {
+      "type": "string",
+      "description": "Information about the author of this exercise, like a formatted e-mail header.",
+      "examples": [
+        "Team Dodona <dodona@ugent.be>"
+      ]
+    }
+  }
+}
