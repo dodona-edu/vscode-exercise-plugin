@@ -2,6 +2,7 @@
   "name": "dodona-exercise-plugin",
   "displayName": "Dodona Exercises",
   "description": "Assistance for writing exercises for the Dodona platform.",
+  "icon": "icon.png",
   "version": "0.0.1",
   "type": "module",
   "engines": {
