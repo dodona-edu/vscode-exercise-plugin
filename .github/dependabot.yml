@@ -1,0 +1,9 @@
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: "/"
+    schedule:
+      interval: weekly
+      time: "13:00"
+      timezone: Europe/Brussels
+    open-pull-requests-limit: 99
