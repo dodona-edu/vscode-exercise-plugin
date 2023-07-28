@@ -4,6 +4,7 @@
   "description": "Assistance for writing exercises for the Dodona platform.",
   "icon": "icon.png",
   "repository": "https://github.com/dodona-edu/vscode-exercise-plugin",
+  "publisher": "dodona",
   "version": "0.0.1",
   "type": "module",
   "engines": {
