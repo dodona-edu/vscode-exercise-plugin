@@ -32,10 +32,7 @@ jobs:
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
-      - name: Bump version number
-        run: |
-          npm config set sign-git-tag true
-          npm version ${{ github.event.inputs.releaseType }}
+      - run: npm version ${{ github.event.inputs.releaseType }}
       - name: Push changes  
         run: |
           git push
