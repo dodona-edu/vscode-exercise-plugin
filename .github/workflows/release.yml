@@ -38,4 +38,4 @@ jobs:
           git push --tags  
       - run: npm run vscode:publish
         env:
-          VSCE_PAT: TODO
+          VSCE_PAT: ${{ secrets.VSCE_PAT }}
