@@ -27,16 +27,15 @@ jobs:
           node-version: 18.x
           cache: npm
       - run: npm ci
-      - run: npm run vscode:prepublish
-      - name: Setup Git
+      - name: Configure git
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
       - run: npm version ${{ github.event.inputs.releaseType }}
-      - name: Push changes  
+      - name: Push changes
         run: |
           git push
-          git push --tags
+          git push --tags  
       - run: npm run vscode:publish
         env:
           VSCE_PAT: TODO
