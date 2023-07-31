@@ -13,8 +13,6 @@ on:
           - major
 
 jobs:
-  main:
-    uses: ./.github/workflows/main.yml
   release:
     runs-on: ubuntu-latest
 
