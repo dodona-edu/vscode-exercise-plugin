@@ -33,7 +33,7 @@
           "suite.yaml",
           "suite.yml"
         ],
-        "url": "./schemas/dsl.schema.json"
+        "url": "https://raw.githubusercontent.com/dodona-edu/universal-judge/master/tested/dsl/schema.json"
       }
     ]
   },
