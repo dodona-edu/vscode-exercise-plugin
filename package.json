@@ -61,6 +61,6 @@
     "@types/webpack-env": "^1.18.1",
     "process": "^0.11.10",
     "@vscode/test-web": "^0.0.44",
-    "@vscode/vsce": "^2.20.1"
+    "@vscode/vsce": "^2.21.0"
   }
 }
