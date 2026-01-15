@@ -5,18 +5,14 @@
   "icon": "icon.png",
   "repository": "https://github.com/dodona-edu/vscode-exercise-plugin",
   "publisher": "dodona",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "type": "module",
   "engines": {
-    "vscode": "^1.80.1"
+    "vscode": "^1.87.0"
   },
   "categories": [
     "Other"
   ],
-  "activationEvents": [
-    "onStartupFinished"
-  ],
-  "browser": "./dist/web/extension.js",
   "contributes": {
     "jsonValidation": [
       {
