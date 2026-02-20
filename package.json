@@ -1,10 +1,10 @@
 {
-  "name": "dodona-exercise-plugin",
-  "displayName": "Dodona Exercises",
+  "name": "dodona-exercise-assistant",
+  "displayName": "Dodona Exercise Assistant",
   "description": "Assistance for writing exercises for the Dodona platform.",
   "icon": "icon.png",
   "repository": "https://github.com/dodona-edu/vscode-exercise-plugin",
-  "publisher": "dodona",
+  "publisher": "DodonaLearningTechnologies",
   "version": "0.0.5",
   "type": "module",
   "engines": {
