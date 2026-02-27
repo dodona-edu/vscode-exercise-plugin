@@ -20,7 +20,7 @@
           "config.json",
           "dirconfig.json"
         ],
-        "url": "./schemas/config.schema.json"
+        "url": "https://dodona.be/schemas/config.json"
       }
     ],
     "yamlValidation": [
